@@ -1,0 +1,25 @@
+Laravel 5 - Deploy to Heroku
+Martin Cruz Otiniano
+
+> composer create-project laravel/laravel my_name_app
+> cd my_name_app
+
+> git init
+> git add -A
+> git commit -m "Initial commit"
+
+> heroku login
+> heroku create my-name-app-heroku
+> heroku buildpacks:set https://github.com/heroku/heroku-buildpack-php
+> git push heroku master
+> heroku open
+
+> touch Procfile
+
+Edit file and save
+      web: vendor/bin/heroku-php-apache2 public/
+
+> git add Procfile
+> git commit -m "Add file Procfile"
+> git push heroku master
+> heroku open

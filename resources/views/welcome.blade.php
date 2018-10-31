@@ -212,17 +212,22 @@
                     </h4>
                     <p>Estamos ubicados en: </p><br>
                 <!-- Add Google Maps -->
-                <div class="flex-center" id="googleMap" style="height:400px;width:100%;margin-bottom:10px;"><br><br></div>
-                <script>
-                    function myMap() {
-                        var myCenter = new google.maps.LatLng(10.2334788,-67.9976678);
-                        var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-                        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-                        var marker = new google.maps.Marker({position:myCenter});
-                        marker.setMap(map);
-                    }
-                </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+                <!--
+                  <div class="flex-center" id="googleMap" style="height:400px;width:100%;margin-bottom:10px;"><br><br></div>
+                  <script>
+                      function myMap() {
+                          var myCenter = new google.maps.LatLng(10.2334788,-67.9976678);
+                          var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+                          var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+                          var marker = new google.maps.Marker({position:myCenter});
+                          marker.setMap(map);
+                      }
+                  </script>
+                  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB1Tcxtg1aPWwr3E8lb4EmQ9IkDPbGJpiM=myMap"></script>
+                -->
+                <div class="flex-center" id="googleMap">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12830.677538748401!2d-68.00509573464883!3d10.232598375590232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e805d06949ed485%3A0x41d00169968fec7c!2sUniversidad+de+Carabobo+-+%C3%81rea+De+Postgrado!5e0!3m2!1ses-419!2sve!4v1541003136625" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="col-sm-8">
                 <br><br>
