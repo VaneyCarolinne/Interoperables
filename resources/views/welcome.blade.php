@@ -75,19 +75,19 @@
             .m-b-md {
                 margin-bottom: 30px;
             }
-            .bg-1 { 
+            .bg-1 {
                 background-color: #1abc9c; /* Green */
                 color: #ffffff;
             }
-            .bg-2 { 
+            .bg-2 {
                 background-color: #474e5d; /* Dark Blue */
                 color: #ffffff;
             }
-            .bg-3 { 
+            .bg-3 {
                 background-color: #ffffff; /* White */
                 color: #555555;
             }
-            .bg-4 { 
+            .bg-4 {
                 background-color: #2f2f2f; /* Black Gray */
                 color: #fff;
             }
@@ -108,7 +108,7 @@
                 0% {
                     opacity: 0;
                     transform: translateY(70%);
-                } 
+                }
                 100% {
                     opacity: 1;
                     transform: translateY(0%);
@@ -118,7 +118,7 @@
                 0% {
                 opacity: 0;
                 -webkit-transform: translateY(70%);
-                }  
+                }
                 100% {
                 opacity: 1;
                 -webkit-transform: translateY(0%);
@@ -150,9 +150,9 @@
     <body>
 
         <div class="flex-center position-ref full-height ">
-            <img src="/slider/LOGO.png" class="slide"> 
+            <img src="{{asset('slider/LOGO.png')}}" class="slide">
             @if (Route::has('login'))
-                <div class="top-right links"> 
+                <div class="top-right links">
                     @auth
                         <a href="{{ url('/home') }}">Inicio</a>
                     @else
@@ -177,13 +177,13 @@
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="/slider/imagen1.png" alt="">
+                            <img src="{{asset('slider/imagen1.png')}}" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="/slider/imagen2.png" alt="">
+                            <img src="{{asset('/slider/imagen2.png')}}" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="/slider/imagen3.png" alt="">
+                            <img src="{{asset('/slider/imagen3.png')}}" alt="">
                         </div>
                     </div>
 
@@ -197,19 +197,19 @@
                 </div>
             </div>
         </div>
-       
+
         <!--INFO en imagenes de interoperables-->
         <div class="content row bg-1">
              <!--Info en letras-->
-             
-            <div class="col-sm-4 slide"> 
+
+            <div class="col-sm-4 slide">
                 <br><br>
                     <h2><strong>Normas Específicas</strong></h2>
                     <h4>Cada solicitud de Creación de Carrera  deberá  estar acompañada de un oficio por parte del ente interesado, ante la Dirección de Docencia Desarrollo Curricular de la Facultad afín , con los siguientes documentos justificativos en formato electrónico: <br>
                     1) Necesidad ocupacional en el entorno.<br>
                     2) Estudio legal, social y económico<br>
                     3) Proyección Académica en el desarrollo local, regional y nacional.<br><br><br>
-                    </h4>   
+                    </h4>
                     <p>Estamos ubicados en: </p><br>
                 <!-- Add Google Maps -->
                 <div class="flex-center" id="googleMap" style="height:400px;width:100%;margin-bottom:10px;"><br><br></div>
@@ -222,7 +222,7 @@
                         marker.setMap(map);
                     }
                 </script>
-                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>    
+                <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
             </div>
             <div class="col-sm-8">
                 <br><br>
@@ -234,16 +234,16 @@
                         <li data-target="#demo2" data-slide-to="1"></li>
                         <li data-target="#demo2" data-slide-to="2"></li>
                     </ul>
-           
+
                     <div class="carousel-inner slideanim">
                         <div class="carousel-item active">
-                            <img src="/botones/objetivos.png" alt="" width="600"><br>
+                            <img src{{asset('botones/objetivos.png')}}" alt="" width="600"><br>
                         </div>
                         <div class="carousel-item">
-                            <img src="/botones/Alcance.png" alt="" width="600"><br>
+                            <img src="{{asset('botones/Alcance.png')}}" alt="" width="600"><br>
                         </div>
                         <div class="carousel-item">
-                            <img src="/botones/BasesLegales.png" alt="" width="600"><br>
+                            <img src="{{asset('botones/BasesLegales.png')}}" alt="" width="600"><br>
                         </div>
                     </div><br>
                     <!-- Left and right controls -->
@@ -254,7 +254,7 @@
                         <span class="carousel-control-next-icon"></span>
                     </a>
                 </div>
-            </div>    
+            </div>
         </div>
 
         <footer class="content bg-2 slideanim">
@@ -282,13 +282,13 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-  
+
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;
