@@ -237,7 +237,7 @@
 
                     <div class="carousel-inner slideanim">
                         <div class="carousel-item active">
-                            <img src"{{asset('botones/objetivos.png')}}" alt="" width="600"><br>
+                            <img src="{{asset('/botones/objetivos.png')}}" alt="" width="600"><br>
                         </div>
                         <div class="carousel-item">
                             <img src="{{asset('botones/Alcance.png')}}" alt="" width="600"><br>
