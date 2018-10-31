@@ -164,7 +164,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <h3>Docencia y Desarrollo Curricular - 2.0</h3>
+                    <h3>Docencia y Desarrollo Curricular - 2.1</h3>
                 </div>
                 <div id="demo" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
