@@ -237,7 +237,7 @@
 
                     <div class="carousel-inner slideanim">
                         <div class="carousel-item active">
-                            <img src{{asset('botones/objetivos.png')}}" alt="" width="600"><br>
+                            <img src"{{asset('botones/objetivos.png')}}"alt="" width="600"><br>
                         </div>
                         <div class="carousel-item">
                             <img src="{{asset('botones/Alcance.png')}}" alt="" width="600"><br>
@@ -260,7 +260,7 @@
         <footer class="content bg-2 slideanim">
             <span class="glyphicon glyphicon-globe slideanim"></span>
             <br><br>
-            <img src="/botones/Documentos.png" alt="" class="slideanim"><br><br><br>
+            <img src="{{asset('botones/Documentos.png')}}" alt="" class="slideanim"><br><br><br>
             <button type="button" class="btn btn-info">interoperables.com</button>
         </footer>
 
