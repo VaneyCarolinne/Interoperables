@@ -150,7 +150,7 @@
     <body>
 
         <div class="flex-center position-ref full-height ">
-            <img src="{{asset('slider/LOGO.png')}}" class="slide">
+            <img src="{{asset('slider/LOGO.jpg')}}" class="slide">
             @if (Route::has('login'))
                 <div class="top-right links">
                     @auth
@@ -164,7 +164,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    <h3>Docencia y Desarrollo Curricular</h3>
+                    <h3>Docencia y Desarrollo Curricular - 2.0</h3>
                 </div>
                 <div id="demo" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -177,13 +177,13 @@
                     <!-- The slideshow -->
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img src="{{asset('/slider/imagen1.png')}}" alt="">
+                            <img src="{{asset('/slider/imagen1.jpg')}}" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/slider/imagen2.png')}}" alt="">
+                            <img src="{{asset('/slider/imagen2.jpg')}}" alt="">
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('/slider/imagen3.png')}}" alt="">
+                            <img src="{{asset('/slider/imagen3.jpg')}}" alt="">
                         </div>
                     </div>
 
@@ -242,13 +242,13 @@
 
                     <div class="carousel-inner slideanim">
                         <div class="carousel-item active">
-                            <img src="{{asset('/botones/objetivos.png')}}" alt="" width="600"><br>
+                            <img src="{{asset('botones/objetivos.jpg')}}" alt="" width="600"><br>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('botones/Alcance.png')}}" alt="" width="600"><br>
+                            <img src="{{asset('botones/Alcance.jpg')}}" alt="" width="600"><br>
                         </div>
                         <div class="carousel-item">
-                            <img src="{{asset('botones/BasesLegales.png')}}" alt="" width="600"><br>
+                            <img src="{{asset('botones/BasesLegales.jpg')}}" alt="" width="600"><br>
                         </div>
                     </div><br>
                     <!-- Left and right controls -->
